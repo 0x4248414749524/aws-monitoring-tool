@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.charts-container {
+  display: flex;
+  justify-content:space-around; /* Optional: Adds space between the charts */
+}
+
+.cpu-chart {
+  width: 600px !important; /* Adjust the width as needed */
+  height: 300px !important; /* Adjust the height as needed */
+  /* Optional styling for margins and borders: */
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid rgb(59, 0, 0);
+  border-radius: 10px;
+
+}
+.net-chart {
+  width: 600px !important; /* Adjust the width as needed */
+  height: 300px !important; /* Adjust the height as needed */
+  /* Optional styling for margins and borders: */
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid rgb(59, 0, 0);
+  border-radius: 10px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: auto;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"] {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control input {
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.form-control label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: all 0.1s ease-in-out;
+}
+
+.form-control input:not(:placeholder-shown) + label,
+.form-control input:focus + label {
+  font-size: 0.75rem;
+  color: #9a5b5b;
+  transform: translateY(-1.5rem);
+}
+
+.error-popup {
+  color: red;
+  background-color: #fdd;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid red;
+  border-radius: 5px;
+}
